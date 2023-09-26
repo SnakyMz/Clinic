@@ -13,3 +13,11 @@ CREATE TABLE treatments(
   name VARCHAR(100) NOT NULL,
   PRIMARY KEY(id)
 );
+
+CREATE table medical_histories(
+ id INT GENERATED ALWAYS AS IDENTITY,
+ admitted_at TIMESTAMP NOT NULL,
+ patient_id INT NOT NULL,
+ status VARCHAR(100) NOT NULL,
+ FOREIGN KEY(patient_id) REFERENCES patients(id)
+);
