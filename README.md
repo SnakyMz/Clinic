@@ -38,6 +38,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 **Clinic** is a PostgreSQL database about a clinic.
 
+<img src='./clinic_diagram.png' alt='Diagram of the clinic database'>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
