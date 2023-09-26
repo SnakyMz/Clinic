@@ -52,3 +52,9 @@ SELECT patients.name as PatientName, medical_histories.admitted_at as Admited, i
 FROM invoices
 JOIN medical_histories ON invoices.medical_history_id = medical_histories.id
 JOIN patients ON medical_histories.patient_id = patients.id;
+
+/* TREATMENTS - INVOICES - INVOICE_ITEMS */
+SELECT treatments.name as treatment, invoice_items.quantity, invoices.total_amount
+FROM invoice_items
+JOIN treatments ON invoice_items.treatment_id = treatments.id
+JOIN invoices ON invoice_items.invoice_id = invoices.id;
