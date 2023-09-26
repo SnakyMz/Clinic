@@ -2,15 +2,11 @@
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Use [schema_based_on_diagram.sql](./schema_based_on_diagram.sql) to create all tables.
 
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
   <h3><b>Clinic</b></h3>
 
@@ -56,7 +52,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ### Key Features <a name="key-features"></a>
 
 - **Contains data about patients**
-- **Contains data about Doctors**
+- **Contains data about invoices**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd project-folder
-  git clone https://github.com/SnakyMz/Vet-Clinic.git
+  git clone https://github.com/SnakyMz/Clinic.git
 ```
 
 ### Install
@@ -158,7 +154,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project and wish to collaborate. Please contact me.
+If you like this project and wish to collaborate. Please contact us.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,9 +166,9 @@ If you like this project and wish to collaborate. Please contact me.
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **Is it responsive?**
+- **Is it POSTGRESQL?**
 
-  - Yes, works both on mobile and desktop.
+  - Yes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
