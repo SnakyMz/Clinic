@@ -19,5 +19,16 @@ CREATE table medical_histories(
  admitted_at TIMESTAMP NOT NULL,
  patient_id INT NOT NULL,
  status VARCHAR(100) NOT NULL,
+ PRIMARY KEY(id),
  FOREIGN KEY(patient_id) REFERENCES patients(id)
+);
+
+CREATE TABLE invoices(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  total_amount DECIMAL NOT NULL,
+  generated_at TIMESTAMP NOT NULL,
+  payed_at TIMESTAMP NOT NULL,
+  medical_history_id INT NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
 );
